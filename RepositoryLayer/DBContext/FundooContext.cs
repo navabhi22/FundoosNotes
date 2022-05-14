@@ -13,7 +13,7 @@ namespace RepositoryLayer.DBContext
         {
 
         }
-
         public DbSet<User> users { get; set; }
     }
+
 }

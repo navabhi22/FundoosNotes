@@ -26,7 +26,7 @@ namespace RepositoryLayer.Services
                                    "<html>" +
                                    "<body style=\"background -color:#ff7f26;text-align:center;\"> " +
                                    "<h1 style=\"color:#051a80;\">Hello Abhinav</h1>" +
-                                   "<h2 style=\"color:#800000;\">Please tab on the below link to change yourn password.</h2>" +
+                                   "<h2 style=\"color:#800000;\">Please tab on the below link to change your password.</h2>" +
                                    "</body>" + $"www.fundooNotes.com/reset-password/{token}" +
 
                                     "<html>";

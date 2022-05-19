@@ -28,14 +28,14 @@ namespace FundooNotes.Controllers
             try
             {
                 this.userBL.AddUser(user);
-                return this.Ok(new {success=true, message=$"user Added Successfully"});
+                return this.Ok(new { success = true, message = $"User Added Successfully" });
             }
             catch (Exception ex)
             {
                 throw ex;
             }
         }
-        [HttpPost("login")]
+        [HttpPost("{Email}/{Password}")]
         public ActionResult LoginUser(string Email, string Password)
         {
             try
@@ -49,7 +49,7 @@ namespace FundooNotes.Controllers
                 }
 
                 string result = this.userBL.LoginUser(Email, Password);
-                return this.Ok(new { success = true, message = $"login successfull {result}", Token = result });
+                return this.Ok(new { success = true, message = $"login successfull Token {result}",  });
 
             }
             catch (Exception ex)
